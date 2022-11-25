@@ -9,7 +9,7 @@ RUN apk update && apk add make gcc libc-dev
 WORKDIR /tmp
 RUN wget -O udpxy-src.tar.gz https://codeload.github.com/pcherenkov/udpxy/tar.gz/refs/tags/1.0-25.1 \
     && tar zxf udpxy-src.tar.gz \
-    && cd udpxy-* && make && make install
+    && cd udpxy-* && cd chipmunk && make && make install
 
 # Alpine v3
 FROM alpine:latest
