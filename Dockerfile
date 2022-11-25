@@ -1,6 +1,6 @@
 # Alpine v3
 FROM alpine:latest as builder
-LABEL maintainer "Lordpedal"
+LABEL maintainer "fqx"
 
 # Instalacion dependencias
 RUN apk update && apk add make gcc libc-dev
